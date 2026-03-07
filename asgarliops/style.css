@@ -298,6 +298,9 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 10px var(--brand-primary);
 }
 
+/* Utilities */
+.overflow-hidden { overflow: hidden !important; }
+
 /* Animations */
 .fade-up {
     opacity: 0;
@@ -1043,6 +1046,8 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     padding: 0.75rem 1rem;
     border-radius: 18px 18px 4px 18px;
+    min-width: 0;
+    word-break: break-word;
 }
 
 .ai-message {
@@ -1072,6 +1077,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.75rem 1.25rem;
     border-radius: 18px 18px 18px 4px;
     color: #e4e4e7;
+    min-width: 0;
+    word-break: break-word;
 }
 
 .typing-indicator {
