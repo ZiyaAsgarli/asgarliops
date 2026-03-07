@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsgarliOps — AI Automation for Business</title>
+    <meta name="description" content="AsgarliOps bizneslər üçün AI avtomatlaşdırma həlləri təqdim edir. Instagram, WhatsApp və rezervasiya sistemləri üçün AI botlar.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">Asgarli<span class="text-gradient">Ops</span></a>
+            
+            <div class="nav-links">
+                <a href="#about">Biz Kimik?</a>
+                <a href="#workflow">Necə işləyir</a>
+                <a href="#target">Kimlər üçün</a>
+                <a href="#demo">Demo</a>
+                <a href="#features">Xidmətlər</a>
+                <a href="#packages">Paketlər</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary d-none-mobile">Müraciət Et</a>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu" id="mobile-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-links">
+                <a href="#about" class="mobile-link">Biz Kimik?</a>
+                <a href="#workflow" class="mobile-link">Necə işləyir</a>
+                <a href="#target" class="mobile-link">Kimlər üçün</a>
+                <a href="#demo" class="mobile-link">Demo</a>
+                <a href="#features" class="mobile-link">Xidmətlər</a>
+                <a href="#packages" class="mobile-link">Paketlər</a>
+            </div>
+            <div class="mobile-action">
+                <a href="#contact" class="btn btn-primary btn-full">Müraciət Et</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero overflow-hidden" id="hero">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">GƏLƏCƏYİN BİZNES AVTOMATLAŞDIRILMASI</span>
+                </div>
+                <h1 class="hero-title">
+                    Biznesiniz üçün<br>
+                    <span class="text-gradient">AI avtomatlaşdırma</span><br>
+                    sistemi
+                </h1>
+                <p class="hero-subtitle">
+                    Instagram və WhatsApp mesajlarını avtomatik cavablandırın, rezervasiyaları idarə edin və müştərilərlə 24/7 əlaqədə qalın.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#packages" class="btn btn-secondary">Paketlərə Bax</a>
+                    <a href="#contact" class="btn btn-primary">Müraciət Et</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-up" style="transition-delay: 0.2s">
+                <div class="glass-panel main-dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mac-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-title">asgarliops-system.app</div>
+                        <div class="mockup-action"><i data-lucide="bell" class="icon-sm"></i></div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="stats-row">
+                            <div class="stat-card">
+                                <div class="stat-icon-wrap bg-purple-soft">
+                                    <i data-lucide="message-circle" class="stat-icon text-purple"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-value">2,408</div>
+                                    <div class="stat-label">Avtomatik Cavab</div>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon-wrap bg-blue-soft">
+                                    <i data-lucide="calendar-check" class="stat-icon text-blue"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-value">156</div>
+                                    <div class="stat-label">Yeni Rezervasiya</div>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon-wrap bg-teal-soft">
+                                    <i data-lucide="clock" class="stat-icon text-green"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-value">24/7</div>
+                                    <div class="stat-label">Aktivlik Zamanı</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-header">
+                            <h4>Canlı Aktivlik</h4>
+                            <span class="live-dot"></span>
+                        </div>
+                        <div class="activity-feed">
+                            <div class="feed-item">
+                                <div class="feed-icon-wrap bg-green-soft"><i data-lucide="check" class="icon-xs text-green"></i></div>
+                                <div class="feed-content">
+                                    <div class="feed-text">Yeni WhatsApp mesajı cavablandırıldı</div>
+                                    <div class="feed-time">İndi</div>
+                                </div>
+                            </div>
+                            <div class="feed-item">
+                                <div class="feed-icon-wrap bg-purple-soft"><i data-lucide="calendar" class="icon-xs text-purple"></i></div>
+                                <div class="feed-content">
+                                    <div class="feed-text">Gözəllik salonu üçün randevu təsdiqləndi</div>
+                                    <div class="feed-time">2 dəq öncə</div>
+                                </div>
+                            </div>
+                            <div class="feed-item">
+                                <div class="feed-icon-wrap bg-pink-soft"><i data-lucide="star" class="icon-xs text-pink"></i></div>
+                                <div class="feed-content">
+                                    <div class="feed-text">Instagram DM vasitəsilə VIP müştəri tanındı</div>
+                                    <div class="feed-time">15 dəq öncə</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biz Kimik -->
+    <section class="about section-padding" id="about">
+        <div class="container fade-up">
+            <div class="section-header text-center">
+                <h2 class="section-title">Biz Kimik?</h2>
+                <div class="section-line mx-auto"></div>
+            </div>
+            <div class="about-content glass-card glowing-border">
+                <p class="about-text">
+                    <span class="text-highlight">AsgarliOps</span> bizneslər üçün 24/7 işləyən AI avtomatlaşdırma sistemləri qurur. 
+                    Sistem Instagram və WhatsApp mesajlarını avtomatik idarə edir, müştəri sorğularını cavablandırır 
+                    və rezervasiyaları avtomatik yaradır. Məqsədimiz hər biznes üçün rəqəmsal işçi kimi işləyən 
+                    ağıllı sistemlər təqdim etməkdir.
+                </p>
+                <div class="about-features">
+                    <div class="feature-tag hover-float"><i data-lucide="check-circle"></i> 24/7 İşləyir</div>
+                    <div class="feature-tag hover-float"><i data-lucide="zap"></i> Sürətli Cavab</div>
+                    <div class="feature-tag hover-float"><i data-lucide="trending-up"></i> Satışları Artırır</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Necə İşləyir -->
+    <section class="workflow section-padding bg-alt" id="workflow">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Necə işləyir</h2>
+                <p class="section-subtitle">Sistemimizin addım-addım işləmə mexanizmi</p>
+            </div>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card fade-up" style="transition-delay: 0.1s">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i data-lucide="message-square"></i>
+                    </div>
+                    <h3 class="step-title">Mesaj Qəbulu</h3>
+                    <p class="step-desc">Müştəri Instagram və ya WhatsApp üzərindən mesaj yazır</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-card fade-up" style="transition-delay: 0.2s">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3 class="step-title">AI Analizi</h3>
+                    <p class="step-desc">AI mesajı anlayır, sorğunu analiz edir və niyyəti müəyyən edir</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-card fade-up" style="transition-delay: 0.3s">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i data-lucide="calendar"></i>
+                    </div>
+                    <h3 class="step-title">Təqvim Yoxlanışı</h3>
+                    <p class="step-desc">Təqvim ilə əlaqə quraraq uyğun vaxtı təsdiqləyir</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step-card fade-up" style="transition-delay: 0.4s">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i data-lucide="send"></i>
+                    </div>
+                    <h3 class="step-title">Avtomatik Cavab</h3>
+                    <p class="step-desc">Müştəriyə avtomatik cavab göndərilir və rezervasiya tamamlanır</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kimlər Üçün -->
+    <section class="target section-padding" id="target">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Kimlər üçün</h2>
+                <p class="section-subtitle">AI avtomatlaşdırma müxtəlif sahələrdə biznesinizin böyüməsinə kömək edir</p>
+            </div>
+            
+            <div class="target-grid">
+                <div class="target-card glass-card hover-lift fade-up" style="transition-delay: 0.1s">
+                    <div class="target-icon-wrap blue-glow">
+                        <i data-lucide="utensils" class="target-icon"></i>
+                    </div>
+                    <div class="target-content">
+                        <h3 class="target-title">Restoranlar</h3>
+                        <p class="target-desc">Rezervasiya, masa sorğuları və menyu ilə bağlı mesajları avtomatik idarə edin.</p>
+                    </div>
+                </div>
+                
+                <div class="target-card glass-card hover-lift fade-up" style="transition-delay: 0.2s">
+                    <div class="target-icon-wrap pink-glow">
+                        <i data-lucide="scissors" class="target-icon"></i>
+                    </div>
+                    <div class="target-content">
+                        <h3 class="target-title">Gözəllik salonları</h3>
+                        <p class="target-desc">Randevu, xidmət sualları və xatırlatma mesajlarını AI ilə avtomatlaşdırın.</p>
+                    </div>
+                </div>
+                
+                <div class="target-card glass-card hover-lift fade-up" style="transition-delay: 0.3s">
+                    <div class="target-icon-wrap teal-glow">
+                        <i data-lucide="stethoscope" class="target-icon"></i>
+                    </div>
+                    <div class="target-content">
+                        <h3 class="target-title">Klinikalar</h3>
+                        <p class="target-desc">Pasient sorğularını, qəbul saatlarını və ilkin məlumatlandırmanı sürətləndirin.</p>
+                    </div>
+                </div>
+                
+                <div class="target-card glass-card hover-lift fade-up" style="transition-delay: 0.4s">
+                    <div class="target-icon-wrap purple-glow">
+                        <i data-lucide="shopping-bag" class="target-icon"></i>
+                    </div>
+                    <div class="target-content">
+                        <h3 class="target-title">E-commerce bizneslər</h3>
+                        <p class="target-desc">Müştəri sualları, sifariş statusu və məhsul məlumatlarını 24/7 cavablandırın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo -->
+    <section class="demo section-padding bg-alt overflow-hidden relative" id="demo">
+        <div class="glow glow-3"></div>
+        <div class="container demo-container relative z-10">
+            <div class="demo-content fade-up">
+                <div class="badge mb-2">
+                    <i data-lucide="smartphone" class="icon-xs"></i>
+                    <span>SİMULYASİYA</span>
+                </div>
+                <h2 class="section-title">Instagram DM Demo</h2>
+                <p class="demo-desc">
+                    Müştərilərinizlə necə ünsiyyət qurduğumuzu görün. AI sistemimiz Instagram DM üzərindən gələn sorğuları saniyələr ərzində anlayır və rezervasiya prosesini tam avtomatlaşdırır.
+                </p>
+                <ul class="demo-features">
+                    <li><i data-lucide="check-circle-2"></i> <span>Səhvsiz və təbii dildə ünsiyyət</span></li>
+                    <li><i data-lucide="check-circle-2"></i> <span>Çox dilli dəstək</span></li>
+                    <li><i data-lucide="check-circle-2"></i> <span>Saniyələr içində cavablandırma</span></li>
+                </ul>
+            </div>
+            
+            <div class="demo-visual fade-up" style="transition-delay: 0.2s">
+                <div class="phone-mockup dark-theme">
+                    <div class="phone-screen">
+                        <div class="phone-notch"></div>
+                        <div class="phone-header">
+                            <i data-lucide="chevron-left" class="header-icon"></i>
+                            <div class="phone-user-info">
+                                <div class="phone-avatar">
+                                    <span class="avatar-text">A</span>
+                                    <div class="online-dot"></div>
+                                </div>
+                                <div class="phone-details">
+                                    <span class="phone-name">AsgarliOps Restaurant</span>
+                                    <span class="phone-status">Business Account</span>
+                                </div>
+                            </div>
+                            <i data-lucide="info" class="header-icon"></i>
+                        </div>
+                        
+                        <div class="chat-container">
+                            <div class="chat-date">Today 14:30</div>
+                            
+                            <div class="chat-message user-message msg-anim-1">
+                                Salam! Bu axşam üçün 2 nəfərlik yeriniz var?
+                            </div>
+                            
+                            <div class="chat-message ai-message msg-anim-2">
+                                <div class="ai-avatar"><i data-lucide="bot"></i></div>
+                                <div class="msg-bubble">
+                                    Salam! 👋 Bəli, bu axşam üçün boş yerlərimiz mövcuddur. Saat neçədə gəlməyi planlaşdırırsınız? 🕒
+                                </div>
+                            </div>
+                            
+                            <div class="chat-message user-message msg-anim-3">
+                                Axşam saat 20:00 üçün zəhmət olmasa.
+                            </div>
+                            
+                            <div class="chat-message ai-message msg-anim-4">
+                                <div class="ai-avatar"><i data-lucide="bot"></i></div>
+                                <div class="msg-bubble">
+                                    Əla! Saat 20:00 üçün 2 nəfərlik rezervasiyanızı qeydə alıram. Adınızı və əlaqə nömrənizi bilə bilərəm? 📝
+                                </div>
+                            </div>
+                            
+                            <div class="chat-message user-message msg-anim-5">
+                                Ziya, 050 123 45 67
+                            </div>
+                            
+                            <div class="chat-message ai-message typing-indicator">
+                                <div class="ai-avatar"><i data-lucide="bot"></i></div>
+                                <div class="msg-bubble type-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="phone-input">
+                            <div class="input-fake">
+                                <span>Message...</span>
+                                <div class="input-actions">
+                                    <i data-lucide="mic"></i>
+                                    <i data-lucide="image"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Xidmətlər -->
+    <section class="features section-padding relative" id="features">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Xidmətlər</h2>
+                <p class="section-subtitle">Tam avtomatlaşdırılmış biznes ekosistemi üçün xüsusi həllər</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass-card hover-border fade-up">
+                    <div class="icon-box text-blue"><i data-lucide="message-circle" class="feature-icon"></i></div>
+                    <h3 class="feature-title">24/7 AI Mesaj Sistemi</h3>
+                    <p class="feature-desc">Instagram və WhatsApp üzərindən gələn mesajları avtomatik cavablandırır.</p>
+                </div>
+                
+                <div class="feature-card glass-card hover-border fade-up" style="transition-delay: 0.1s">
+                    <div class="icon-box text-purple"><i data-lucide="calendar-check" class="feature-icon"></i></div>
+                    <h3 class="feature-title">Rezervasiya Avtomatlaşdırması</h3>
+                    <p class="feature-desc">Rezervasiya sorğularını qəbul edir və uyğun vaxtı təsdiqləyir.</p>
+                </div>
+                
+                <div class="feature-card glass-card hover-border fade-up" style="transition-delay: 0.2s">
+                    <div class="icon-box text-pink"><i data-lucide="calendar-days" class="feature-icon"></i></div>
+                    <h3 class="feature-title">Google Calendar İnteqrasiyası</h3>
+                    <p class="feature-desc">Rezervasiya və görüşləri təqvim ilə avtomatik sinxronlaşdırır.</p>
+                </div>
+                
+                <div class="feature-card glass-card hover-border fade-up" style="transition-delay: 0.3s">
+                    <div class="icon-box text-yellow"><i data-lucide="star" class="feature-icon"></i></div>
+                    <h3 class="feature-title">VIP Müştəri Tanıma</h3>
+                    <p class="feature-desc">Daimi müştəriləri tanıyır və onlara fərqli yanaşma tətbiq edir.</p>
+                </div>
+                
+                <div class="feature-card glass-card hover-border fade-up" style="transition-delay: 0.4s">
+                    <div class="icon-box text-teal"><i data-lucide="bell-ring" class="feature-icon"></i></div>
+                    <h3 class="feature-title">Follow-up və Xatırlatmalar</h3>
+                    <p class="feature-desc">Müştərilərə avtomatik xatırlatma və follow-up mesajları göndərir.</p>
+                </div>
+                
+                <div class="feature-card glass-card hover-border fade-up" style="transition-delay: 0.5s">
+                    <div class="icon-box text-gray"><i data-lucide="database" class="feature-icon"></i></div>
+                    <h3 class="feature-title">Sadə CRM İdarəsi</h3>
+                    <p class="feature-desc">Müştəri məlumatlarını toplayır, saxlayır və istifadəyə hazır edir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paketlər -->
+    <section class="packages section-padding bg-alt overflow-hidden relative" id="packages">
+        <div class="glow glow-4"></div>
+        <div class="container relative z-10">
+            <div class="section-header text-center fade-up">
+                <h2 class="section-title">Paketlərimiz</h2>
+                <p class="section-subtitle">Ehtiyaclarınıza və biznes miyqasınıza uyğun plan seçin</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter -->
+                <div class="pricing-card glass-card fade-up">
+                    <div class="pricing-header">
+                        <h3 class="package-name">STARTER</h3>
+                        <p class="package-target">Kiçik bizneslər üçün</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">AZN</span>
+                        <span class="amount">100</span>
+                        <span class="period">/ ay</span>
+                    </div>
+                    <div class="pricing-setup">+ 300 AZN Setup</div>
+                    
+                    <div class="pricing-divider"></div>
+                    
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> <span>AI mesaj sistemi</span></li>
+                        <li><i data-lucide="check"></i> <span>Instagram DM cavabları</span></li>
+                        <li><i data-lucide="check"></i> <span>Rezervasiya sistemi</span></li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-outline btn-full">Seç</a>
+                    </div>
+                </div>
+                
+                <!-- Business (Popular) -->
+                <div class="pricing-card glass-card popular glowing-border fade-up" style="transition-delay: 0.1s">
+                    <div class="popular-badge">Ən Çox Seçilən</div>
+                    <div class="pricing-header">
+                        <h3 class="package-name gradient-text">BUSINESS</h3>
+                        <p class="package-target">İnkişaf edən bizneslər üçün</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">AZN</span>
+                        <span class="amount text-white">150</span>
+                        <span class="period">/ ay</span>
+                    </div>
+                    <div class="pricing-setup">+ 300 AZN Setup</div>
+                    
+                    <div class="pricing-divider"></div>
+                    
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> <span>Instagram + WhatsApp AI</span></li>
+                        <li><i data-lucide="check"></i> <span>VIP müştəri tanıma</span></li>
+                        <li><i data-lucide="check"></i> <span>Google Calendar inteqrasiyası</span></li>
+                        <li><i data-lucide="check"></i> <span>Avtomatik xatırlatmalar</span></li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary btn-full hover-glow">Seç</a>
+                    </div>
+                </div>
+                
+                <!-- Full AI -->
+                <div class="pricing-card glass-card fade-up" style="transition-delay: 0.2s">
+                    <div class="pricing-header">
+                        <h3 class="package-name">FULL AI SİSTEM</h3>
+                        <p class="package-target">Professional həllər</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">AZN</span>
+                        <span class="amount">200</span>
+                        <span class="period">/ ay</span>
+                    </div>
+                    <div class="pricing-setup">+ 300 AZN Setup</div>
+                    
+                    <div class="pricing-divider"></div>
+                    
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> <span>Instagram + WhatsApp AI sistemi</span></li>
+                        <li><i data-lucide="check"></i> <span>VIP sistemi</span></li>
+                        <li><i data-lucide="check"></i> <span>Rezervasiya və booking</span></li>
+                        <li><i data-lucide="check"></i> <span>Follow-up mesajlar</span></li>
+                        <li><i data-lucide="check"></i> <span>Biznes analitika</span></li>
+                    </ul>
+                    
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-outline btn-full">Seç</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bizimlə Əlaqə -->
+    <section class="contact section-padding" id="contact">
+        <div class="container contact-container">
+            <div class="contact-card glass-card fade-up">
+                <div class="contact-info">
+                    <h2 class="section-title">Bizimlə Əlaqə</h2>
+                    <p class="contact-desc">
+                        Formu doldurun, sizin üçün ən uyğun sistemi quraq
+                    </p>
+                    <div class="contact-brand">
+                        <div class="brand-line"></div>
+                        <span>Bizneslər üçün AI avtomatlaşdırma sistemləri.</span>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <p class="social-label">Bizi İzləyin</p>
+                        <a href="https://www.instagram.com/asgarliops/" target="_blank" rel="noopener noreferrer" class="social-link hover-float" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrap">
+                    <form name="muraciet" method="POST" data-netlify="true" class="contact-form" id="contactForm">
+                        <input type="hidden" name="form-name" value="muraciet" />
+                        <div class="form-group">
+                            <label for="name">Ad</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Adınız və Soyadınız" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business">Biznes adı</label>
+                            <input type="text" name="business" id="business" class="form-control" placeholder="Biznesinizin adı" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon nömrəsi</label>
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="+994 (XX) XXX XX XX" required>
+                        </div>
+                        
+                        <!-- Netlify hidden inputs are auto-generated from the Netlify Forms processor, but we keep the form-name for AJAX -->
+                        
+                        <button type="submit" class="btn btn-primary btn-full submit-btn hover-glow">
+                            <span>Sistem Qurmaq üçün Müraciət Et</span>
+                            <i data-lucide="arrow-right" class="icon-sm btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-t">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">Asgarli<span class="text-gradient">Ops</span></div>
+                <div class="footer-copy">
+                    © 2026 AsgarliOps — Bizneslər üçün AI avtomatlaşdırma sistemləri.
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/asgarliops/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                    <i data-lucide="instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
