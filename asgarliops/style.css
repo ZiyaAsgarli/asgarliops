@@ -450,6 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-action {
     margin-top: auto;
     padding-top: 2rem;
+    padding-bottom: env(safe-area-inset-bottom, 20px);
     border-top: 1px solid var(--glass-border);
 }
 
@@ -457,7 +458,6 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     position: relative;
     padding: 12rem 0 6rem;
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
